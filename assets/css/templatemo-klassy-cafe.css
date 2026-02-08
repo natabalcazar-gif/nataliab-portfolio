@@ -1687,6 +1687,7 @@ responsive
 
 /* Estas funciones son para el tipo de formato y letra de las Skills*/
 
+
 /* Estas funciones son para los lenguajes*/
 
 .language-item {
@@ -1716,23 +1717,25 @@ responsive
 .progress-bar {
   height: 100%;
   border-radius: 10px;
+  width: 0; /* Bootstrap fallback */
 }
 
 /* Levels */
 .progress-bar.english {
-  width: 60%; /* B1 */
+  width: 60% !important; /* B1 */
   background-color: #4da3ff;
 }
 
 .progress-bar.russian {
-  width: 75%; /* B2 */
+  width: 75% !important; /* B2 */
   background-color: #5ad1a3;
 }
 
 .progress-bar.french {
-  width: 45%; /* A2–B1 */
+  width: 45% !important; /* A2 */
   background-color: #f4b860;
 }
+
 /* Estas funciones son para los lenguajes*/
 
 @-webkit-keyframes jumper {
